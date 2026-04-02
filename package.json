@@ -1,20 +1,27 @@
 {
   "name": "sales",
   "version": "1.0.0",
-  "description": "",
+  "description": "Genotek Sales Manager Bot",
   "main": "index.js",
   "directories": {
     "lib": "lib",
     "test": "tests"
   },
   "scripts": {
-    "test": "vitest run --reporter=verbose"
+    "test": "vitest run --reporter=verbose",
+    "bot:start": "npx tsx bot/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
     "@supabase/supabase-js": "^2.101.1",
+    "dotenv": "^16.4.7",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
     "typescript": "^5.0.0",
     "vitest": "2.1.9"
   }

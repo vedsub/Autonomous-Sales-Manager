@@ -92,6 +92,15 @@ create table bot_audit_log (
 );
 
 -- ============================================================
+-- SESSIONS (Telegram bot session persistence)
+-- ============================================================
+create table sessions (
+  chat_id       text primary key,
+  context       jsonb not null default '{}',
+  last_updated  timestamptz default now()
+);
+
+-- ============================================================
 -- SEED DATA — pricing_rules
 -- ============================================================
 insert into pricing_rules (region, product_family, material_multiplier_min, material_multiplier_max,
