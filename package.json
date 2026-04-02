@@ -1,0 +1,21 @@
+{
+  "name": "sales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest run --reporter=verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.101.1",
+    "typescript": "^5.0.0",
+    "vitest": "2.1.9"
+  }
+}
